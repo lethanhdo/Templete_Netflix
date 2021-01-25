@@ -1,0 +1,207 @@
+.Questions {
+
+    color: #fff;
+    background: #000;
+
+    &-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+            font-size: 3.125rem;
+            line-height: 1.1;
+            margin-bottom: .5rem;
+        }
+
+        .box {
+            width: 57%;
+            margin: 2em auto;
+
+            .box-ques {
+
+                text-align: left;
+                margin-bottom: 0.5rem;
+                position: relative;
+                border: 0;
+                font-size: 1.8rem;
+
+                .ques {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 1px;
+                    font-weight: 400;
+                    background: #303030;
+                    cursor: pointer;
+
+                    p {
+                        padding: .8em 2.2em .8em 1.2em;
+
+                    }
+
+                    i {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 2rem;
+                        transition: all .5s ease-in-out;
+                    }
+
+                    .i-rotate {
+                        transform: rotate(-45deg);
+                    }
+
+                }
+
+                .ans {
+                    max-height: 0;
+                    overflow: hidden;
+                    padding: 0;
+                    font-weight: 400;
+                    background: #303030;
+                    transition: all .5s ease-in-out;
+
+                    p {
+                        padding: .8em 2.2em .8em 1.2em;
+                    }
+
+                }
+
+                .ans-show {
+                    max-height: 500px;
+                }
+            }
+        }
+
+        a {
+            font-size: 1.875rem;
+            background-color: #e50914;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, .45);
+            color: #fff;
+            display: flex;
+            width: 18rem;
+            height: 4.7rem;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0;
+
+
+            i {
+                margin-left: 1rem;
+            }
+        }
+
+        .input-group {
+            width: initial;
+        }
+
+        input {
+            width: 31rem !important;
+            height: 4.7rem;
+            border-radius: 0;
+            border-color: initial;
+            box-shadow: none;
+        }
+        input:focus{
+            box-shadow: none;
+            border-color: initial;
+
+        }
+
+        .ready {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin: 1.5rem;
+        }
+
+        a:hover {
+            background: #f40612;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Questions {
+        &-box {
+            .box {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            i {
+                font-size: 1.5rem;
+            }
+
+            a {
+                font-size: 1rem;
+                width: 12rem;
+                height: 2.7rem;
+            }
+
+            .input-group {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .input-group-prepend {
+                a {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .Questions {
+        padding-left: 0;
+        padding-right: 0;
+
+        &-box {
+            .box {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                font-weight: bold;
+                width: 20rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            i {
+                font-size: 1.5rem;
+            }
+
+            a {
+                font-size: 1rem;
+                width: 12rem;
+                height: 2.7rem;
+            }
+
+            .ready {
+                width: 78%;
+            }
+
+            input {
+                width: 21rem !important;
+                height: 3rem;
+            }
+        }
+    }
+}

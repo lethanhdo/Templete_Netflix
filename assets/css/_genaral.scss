@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeue.woff2') format('woff2'),
+         url('../fonts/BebasNeue.woff') format('woff'),
+         url('../fonts/BebasNeue.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NetflixFont_1';
+    src: url('../fonts/NetflixFont_1.woff2') format('woff2'),
+         url('../fonts/NetflixFont_1.woff') format('woff'),
+         url('../fonts/NetflixFont_1.ttf') format('truetype');
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.padding{
+    padding: 70px 45px;
+}
+
+.border-bot{
+    border-bottom: 8px solid #222;
+}
+
+@media (max-width: 576px){
+    .padding{
+        padding: 50px 5%;
+    }
+}

@@ -1,0 +1,15 @@
+@import './reset';
+@import './genaral';
+@import './Header';
+@import './Products';
+@import './Questions';
+@import './Footer';
+
+
+.container{
+    width: 100%;
+}
+
+a:hover{
+    text-decoration: none;
+}

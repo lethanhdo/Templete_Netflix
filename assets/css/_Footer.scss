@@ -1,0 +1,160 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+
+    a {
+        color: #757575;
+        font-size: 1em;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    &-box {
+        width: 100%;
+        margin: auto 10rem;
+        padding: 70px 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .Footer-site {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 1em;
+
+            .Footer-top {
+                font-size: 1em;
+                margin: 0 0 30px;
+            }
+
+            .Footer-links {
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    padding: 0;
+                    margin-bottom: 16px;
+                    display: inline-block;
+                    min-width: 100px;
+                    width: 25%;
+                    padding-right: 12px;
+                }
+            }
+
+            .Footer-globe {
+                margin-top: 20px;
+                display: flex;
+                color: #999;
+                flex-direction: column;
+                cursor: default;
+
+                .globe-button {
+                    width: 155px;
+                    height: 54px;
+                    border: 1px solid #333;
+                    color: #999;
+                    font-size: 16px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        margin: 0 5px;
+                    }
+
+                    .fa-sort-down{
+                        height: 20px;
+                    }
+                }
+
+                .globe-options {
+                    width: 155px;
+                    border: 1px solid #333;
+                    color: #999;
+                    font-size: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 0;
+                    overflow: hidden;
+                    // transition: all .5s ease-in-out;
+
+                    a {
+                        width: 100%;
+                        text-align: center;
+                        padding: 2px;
+                    }
+
+                    a:hover {
+                        color: #fff;
+                        text-decoration: none;
+                        background-color: dodgerblue;
+                    }
+
+
+
+                    .active{
+                        color: #fff;
+                        background-color: dodgerblue;
+                    }
+                }
+
+                .globe-options-show{
+                    height: 100%;
+                }
+
+            }
+
+            .Footer-bot {
+                margin-top: 24px;
+                color: #999;
+                font-size: 13px;
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .Footer{
+        &-box{
+            margin: 0;
+            .Footer-site{
+                margin: 0;
+                width: 100%;
+            }
+        }
+        a{
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .Footer{
+        &-box{
+            margin: 0;
+            padding: 0;
+            .Footer-site{
+                margin: 0 auto;
+                width: 90%;
+            }
+        }
+        li{
+            width: 50%!important;
+        }
+        a{
+            font-size: 0.8rem;
+        }
+        .footer-top-a{
+            font-size: 1rem;
+        }
+    }
+}
